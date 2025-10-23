@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap Basics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <form class="row">
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name:</label>
+                <input type="text" class="form-control" placeholder="First Name" id="firstName">
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" placeholder="Last Name" id="lastName">
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkBox">
+                    <label class="form-check-label" for="checkBox">Agree to Terms</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>John</td>
+                        <td>Pirano</td>
+                        <td>JP@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Sam</td>
+                        <td>Buristo</td>
+                        <td>Sabur2001@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Jasmine</td>
+                        <td>Eggy</td>
+                        <td>Jeggy@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+           
+    </div>
+
+    <div class="container-fluid">
+
+        <img src="images/tiger-image.jpg" class="img-fluid col-12" alt="image not appearing">
+        <img src="images/tiger-image.jpg" class="rounded-circle" alt="image not appearing">
+
+        <button type="button" class="btn btn-primary">First Button</button>
+        <button type="button" class="btn btn-danger d-none d-md-block">Second Button</button>
+
+    </div>
+    
+</body>
+</html>

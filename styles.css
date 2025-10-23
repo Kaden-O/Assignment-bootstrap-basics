@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+    img.rounded-circle {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 1rem auto;
+    }
+    form {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
